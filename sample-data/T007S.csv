@@ -1,0 +1,11 @@
+SPRAS,KALSM,MWSKZ,TEXT1
+T,TAXTR,A1,Hesaplanan KDV %20
+T,TAXTR,A2,Hesaplanan KDV %10
+T,TAXTR,A3,Hesaplanan KDV %1
+T,TAXTR,A0,İhracat istisnası (KDVK 11/1-a)
+T,TAXTR,AE,Hesaplanan KDV %18 (10.07.2023 öncesi)
+T,TAXTR,V1,İndirilecek KDV %20
+T,TAXTR,V2,İndirilecek KDV %10
+T,TAXTR,V3,İndirilecek KDV %1
+T,TAXTR,V0,KDV'siz alış (ithalat; gümrük KDV'si ayrı)
+T,TAXTR,VE,İndirilecek KDV %18 (10.07.2023 öncesi)
