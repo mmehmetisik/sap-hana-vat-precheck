@@ -2,9 +2,11 @@
 
 > Before the monthly VAT return goes out, a tax manager usually compares two totals: the VAT accounts
 > in the ledger against the e-invoice list. When errors cancel each other out, or when the e-invoice
-> itself is wrong, the totals agree and the return goes out wrong.
-> This app checks **every line**, explains each finding with its document and legal basis, and was
-> **tested blind**: 151 errors hidden in 12 monthly returns, with an answer key the engine never saw.
+> itself is wrong, the totals agree and the return goes out wrong. In the test below, that comparison
+> saw **less than half of the error volume (49%)**.
+> This app checks **every line**, explains each finding with its document and legal basis, and says how
+> sure it is. It was **tested blind**: 151 errors hidden in 12 monthly returns, with an answer key the
+> engine never saw. It found all 151.
 
 ![October 2026: do not file, 10 certain risks open](images/01-overview.png)
 
@@ -50,6 +52,7 @@ All measured on the exam seed, run once. Commands and outputs: [EVIDENCE.md](EVI
 | Errors found | **151 / 151** — every type, in full |
 | When it says "certain" | **164 / 164 right.** No certain alarm on any trap or clean entry. |
 | What each label says vs. what was measured | Certain 100% → **100%** · Medium 47% → **60%** (18/30) · Weak signal 35% → **33%** (12/36) |
+| How sure we can be of that | Medium and weak rest on 30 and 36 findings, so these rates are rough. 95% intervals (Wilson): certain **97.7–100%** · medium **42–75%** · weak **20–50%**. Every stated rate lies inside its interval: the labels held, on small samples. |
 | False alarms | 36, all medium or weak, all on traps · **0 on clean entries** |
 | Error in the return | **TRY 2.64M → TRY 0.55M** with the certain fixes (−79%). Applying weak signals blindly too: TRY 1.04M. |
 | A check on totals only | sees **49%** of the error volume. In March 2026 the totals differed by just 0.45% and 0.44% — they look reconciled — while TRY 334K of errors sat inside. |
