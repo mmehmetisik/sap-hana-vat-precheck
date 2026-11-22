@@ -54,6 +54,7 @@ SHA-256 of the engine files at that moment (first 12 characters): `kontroller.sq
 | 2026-11-22 | October 2026 return: as booked → with the certain fixes | `GET /api/donem/202610` | VAT payable TRY 2,914,911.02 → 3,170,864.69 (+255,953.67) · KDV2 TRY 539,809.77 → 542,970.91 (+3,161.14) |
 | 2026-11-22 | Tests with the exam data | `cd 02-vergi` · `..\.venv\Scripts\python -m pytest -q` | 41 passed (23.8 s) |
 | 2026-11-22 | Exam data set (in HANA) | `wc -l` on the exam CSVs | BKPF 14,065 · BSEG and ACDOCA 39,978 · BSET 14,026 · WITH_ITEM 869 · e-invoice register 12,967 · 80 customers · 41 vendors (8 with withholding) · 10 tax codes · Aug 2024 – Nov 2026 (28 months) |
+| 2026-11-22 | Demo video | `ffprobe` · `ffmpeg -af ebur128=peak=true` · frames read one by one against this file · `GET /api/belge/1900001599/2026` | `video/sap-hana-vat-precheck-en-voiced.mp4`: 47.6 s, 1920×1080, 30 fps, H.264 + AAC · −16.0 LUFS, peak −2.0 dBFS · every number on screen matches the exam rows above · the caption "e-invoice 20% · SAP posting 18%" matches the document in HANA (TRY 60,420.23 vs 54,378.21) · voice: Kokoro (af_heart), generated locally |
 | 2026-11-22 | Screenshots are not edited | `powershell -File 02-vergi/vitrin/ekran_al.ps1` | 5 PNGs at 2880 px width from the running app's URLs, with a clean browser profile each time · a scrolled page rendered blank in the headless browser on the first try, so a `?odak=` focus view was added instead of scrolling |
 
 ## Intermediate results (before a fix, for the record)

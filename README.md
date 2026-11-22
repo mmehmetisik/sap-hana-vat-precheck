@@ -10,6 +10,8 @@
 
 ![October 2026: do not file, 10 certain risks open](images/01-overview.png)
 
+▶️ **Demo video:** [47 seconds, with voice-over](video/sap-hana-vat-precheck-en-voiced.mp4) (text-to-speech voice, Kokoro, generated locally)
+
 **Second project of my SAP HANA Finance Series.** Part 1: [13-week cash forecast](https://github.com/mmehmetisik/sap-hana-cash-forecast).
 Same fictitious company, SAP table structure, Turkish chart of accounts and Turkish VAT rules.
 
@@ -186,6 +188,7 @@ UI5 Web Components 2.29 (SAP Fiori Horizon) · Recharts · pytest
 ## What is in this repository
 
 - This README and the screenshots in [`images/`](images/). A script takes them from the running app; nothing is edited by hand.
+- Demo video: [`video/`](video/).
 - The HANA schema and the six checks in SQLScript: [`hana/schema.sql`](hana/schema.sql), [`hana/checks.sql`](hana/checks.sql).
 - The rules with legal sources: [`RULES.md`](RULES.md).
 - Small sample data: [`sample-data/`](sample-data/) — the two documents in the screenshots, a withholding invoice,
